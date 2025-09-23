@@ -16,7 +16,7 @@ export { Keyword } from "./components/typography/keyword";
 export { List } from "./components/typography/list";
 export { ListItem } from "./components/typography/list-item";
 export { Quote } from "./components/typography/quote";
-export { Repitition } from "./components/typography/repitition";
+export { Repetition } from "./components/typography/repetition";
 export { VerticalText } from "./components/typography/vertical-text";
 
 // Visual components
