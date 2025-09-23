@@ -1,37 +1,14 @@
 import React from "react";
-import { navigationLayout } from "./chapter/layout";
 
-export const devElements: NavigationElement[] = [
-  navigationLayout,
-  {
-    title: "typography",
-    components: [
-      { title: "title", url: "#title" },
-      { title: "headings", url: "#headings" },
-      { title: "paragraph", url: "#paragraph" },
-    ],
-  },
-  {
-    title: "footnote",
-    components: [{ title: "footnote", url: "#footnote" }],
-  },
-  {
-    title: "visual",
-    components: [
-      { title: "highlighted black", url: "#highlighted-black" },
-      { title: "highlighted pink", url: "#highlighted-pink" },
-      { title: "keyword", url: "#keyword" },
-      { title: "quote", url: "#quote" },
-      { title: "repitition", url: "#repitition" },
-      { title: "vertical text", url: "#vertical-text" },
-      { title: "list", url: "#list" },
-    ],
-  },
-];
+import { navigationLayout } from "./chapter/layout";
+import { navigationPages } from "./chapter/pages";
+import { navigationTypography } from "./chapter/typography";
+import { navigationVisual } from "./chapter/visual";
 
 export type NavigationComponent = {
   title: string;
-  url: string;
+  componentUrl?: string;
+  implementationUrl?: string;
 };
 
 export type NavigationElement = {
@@ -39,10 +16,21 @@ export type NavigationElement = {
   components: NavigationComponent[];
 };
 
+export const navigationElements: NavigationElement[] = [
+  navigationLayout,
+  navigationPages,
+  navigationTypography,
+  navigationVisual,
+];
+
 export type NavigationProps = {
   elements: NavigationElement[];
   isPreviewReady?: boolean;
 };
+
+function createAnchorId(title: NavigationComponent["title"]): string {
+  return `#${title.toLowerCase().replace(/\s+/g, "-")}`;
+}
 
 export function Navigation({
   elements,
@@ -94,10 +82,12 @@ export function Navigation({
           <p className="font-bold mb-2 text-white">{element.title}</p>
           <ul>
             {element.components.map((component) => (
-              <li key={component.url} className="mb-1">
+              <li key={createAnchorId(component.title)} className="mb-1">
                 <a
-                  href={component.url}
-                  onClick={(e) => handleNavClick(e, component.url)}
+                  href={createAnchorId(component.title)}
+                  onClick={(e) =>
+                    handleNavClick(e, createAnchorId(component.title))
+                  }
                   className={`text-white hover:underline pl-5 hover:bg-tpink w-fit hover:text-black link ${
                     !isPreviewReady
                       ? "opacity-50 cursor-not-allowed"

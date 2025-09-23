@@ -3,8 +3,20 @@ import { NavigationElement } from "../../navigation";
 export const navigationLayout: NavigationElement = {
   title: "layout",
   components: [
-    { title: "two columns", url: "#two-columns" },
-    { title: "three columns left", url: "#three-columns-left" },
-    { title: "three columns right", url: "#three-columns-right" },
+    {
+      title: "two columns",
+      componentUrl: "/layout/two-columns.tsx",
+      implementationUrl: "layout/two-columns.story.tsx",
+    },
+    {
+      title: "three columns left",
+      componentUrl: "/layout/three-columns-left.tsx",
+      implementationUrl: "/layout/three-columns-left.story.tsx",
+    },
+    {
+      title: "three columns right",
+      componentUrl: "/layout/three-columns-right.tsx",
+      implementationUrl: "/layout/three-columns-right.story.tsx",
+    },
   ],
 };

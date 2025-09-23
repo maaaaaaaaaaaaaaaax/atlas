@@ -9,15 +9,17 @@ import { ImageReferencesStory } from "./preview/chapter/pages/image-references.s
 import { ReferencesStory } from "./preview/chapter/pages/references.story";
 
 // Typography components
-import { BrStory } from "./preview/chapter/typography/br.story";
-import { FootnoteStory } from "./preview/chapter/typography/footnote.story";
-import { HighlightedBlackStory } from "./preview/chapter/typography/highlighted-black.story";
-import { HighlightedPinkStory } from "./preview/chapter/typography/highlighted-pink.story";
-import { KeywordStory } from "./preview/chapter/typography/keyword.story";
-import { ListStory } from "./preview/chapter/typography/list.story";
-import { QuoteStory } from "./preview/chapter/typography/quote.story";
-import { RepititionStory } from "./preview/chapter/typography/repitition.story";
-import { VerticalTextStory } from "./preview/chapter/typography/vertical-text.story";
+import {
+  BrStory,
+  FootnoteStory,
+  HighlightedBlackStory,
+  HighlightedPinkStory,
+  KeywordStory,
+  ListStory,
+  QuoteStory,
+  RepetitionStory,
+  VerticalTextStory,
+} from "./preview/chapter/typography";
 
 // Visual components
 import { ChartStory } from "./preview/chapter/visual/chart.story";
@@ -25,9 +27,9 @@ import { FigureImageStory } from "./preview/chapter/visual/figure-image.story";
 import { FigureStory } from "./preview/chapter/visual/figure.story";
 
 // Other components
-import { DefinitionStory } from "./preview/chapter/components/definition.story";
-import { DottedLineStory } from "./preview/chapter/components/dotted-line.story";
-import { PageNumerationStory } from "./preview/chapter/components/page-numeration.story";
+import { DefinitionStory } from "./preview/chapter/other/definition.story";
+import { DottedLineStory } from "./preview/chapter/other/dotted-line.story";
+import { PageNumerationStory } from "./preview/chapter/other/page-numeration.story";
 
 export function Book() {
   return (
@@ -107,7 +109,7 @@ export function Book() {
 
       <div>
         <ChapterName name="repetition" id="repetition" />
-        <RepititionStory />
+        <RepetitionStory />
       </div>
       <PageBreak />
       <div>
@@ -116,7 +118,7 @@ export function Book() {
       </div>
       <PageBreak />
       <div>
-        <ChapterName name="line break" id="br" />
+        <ChapterName name="line break" id="line-break" />
         <BrStory />
       </div>
 

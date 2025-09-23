@@ -6,7 +6,7 @@ export type HighlightedProps = {
   fullWidth?: boolean;
 };
 
-export function Repitition({ children, fullWidth = false }: HighlightedProps) {
+export function Repetition({ children, fullWidth = false }: HighlightedProps) {
   if (fullWidth) {
     return (
       <div
