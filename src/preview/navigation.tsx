@@ -1,5 +1,6 @@
 import React from "react";
 
+import { useActiveComponent } from "../contexts/ActiveComponentContext";
 import { navigationLayout } from "./chapter/layout";
 import { navigationPages } from "./chapter/pages";
 import { navigationTypography } from "./chapter/typography";
@@ -36,6 +37,11 @@ export function Navigation({
   elements,
   isPreviewReady = false,
 }: NavigationProps) {
+  const { setActiveComponent } = useActiveComponent();
+
+  // Create a flat map of all components for easy lookup
+  const allComponents = elements.flatMap((element) => element.components);
+
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     url: string
@@ -44,7 +50,19 @@ export function Navigation({
     if (!isPreviewReady) {
       return;
     }
+
     const targetId = url.replace("#", "");
+
+    // Find the component data based on the target ID
+    const componentTitle = targetId.replace(/-/g, " ");
+    const component = allComponents.find(
+      (comp) => comp.title.toLowerCase() === componentTitle
+    );
+
+    if (component) {
+      setActiveComponent(component);
+    }
+
     const previewContainer = document.querySelector("#preview");
     if (!previewContainer) {
       console.warn("Preview container not found");
