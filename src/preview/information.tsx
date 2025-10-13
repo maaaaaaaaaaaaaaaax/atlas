@@ -5,7 +5,7 @@ export function Information() {
 
   const generateGitHubUrl = (path: string) => {
     const basePath =
-      "https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/src";
+      "https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/src/components";
     return `${basePath}${path.startsWith("/") ? "" : "/"}${path}`;
   };
 
@@ -26,7 +26,7 @@ export function Information() {
   }
 
   return (
-    <div>
+    <div className="flex flex-row">
       {activeComponent.componentUrl && (
         <a
           className={`text-white hover:underline pl-5 hover:bg-tpink w-fit hover:text-black block mb-2`}
