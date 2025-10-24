@@ -26,7 +26,7 @@ export default function App() {
           />
         </div>
 
-        <div className="fixed top-0 right-0 z-10 pt-30 m-10 hidden md:block">
+        <div className="fixed top-0 right-0 z-10 pt-30 m-10 hidden xl:block">
           <Information />
         </div>
 
