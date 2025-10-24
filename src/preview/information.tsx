@@ -19,7 +19,7 @@ export function Information() {
     return (
       <div>
         <p className="text-white text-sm opacity-70">
-          Select a component to see links
+          Select a component for further information
         </p>
       </div>
     );
