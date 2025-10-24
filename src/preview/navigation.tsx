@@ -96,8 +96,14 @@ export function Navigation({
         </>
       )}
       {elements.map((element) => (
-        <div key={element.title} className="mb-4">
-          <p className="font-bold mb-2 text-white">{element.title}</p>
+        <details
+          key={element.title}
+          className="mb-4 text-white"
+          open={elements.indexOf(element) === 0}
+        >
+          <summary className="font-normal mb-2 text-white font-ibm text-[11px] list-none cursor-pointer hover:bg-tpink hover:text-black">
+            {element.title}
+          </summary>
           <ul>
             {element.components.map((component) => (
               <li key={createAnchorId(component.title)} className="mb-1">
@@ -117,7 +123,7 @@ export function Navigation({
               </li>
             ))}
           </ul>
-        </div>
+        </details>
       ))}
     </div>
   );
