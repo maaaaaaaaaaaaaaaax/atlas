@@ -13,12 +13,6 @@ https://atlas-paged.vercel.app/
 npm install atlas-paged
 ```
 
-## Install Peer Dependencies
-
-```bash
-npm install react react-dom tailwindcss pagedjs
-```
-
 ## Quick Start
 
 ```tsx
