@@ -38,8 +38,6 @@ export function Navigation({
   isPreviewReady = false,
 }: NavigationProps) {
   const { setActiveComponent } = useActiveComponent();
-
-  // Create a flat map of all components for easy lookup
   const allComponents = elements.flatMap((element) => element.components);
 
   const handleNavClick = (
@@ -53,7 +51,6 @@ export function Navigation({
 
     const targetId = url.replace("#", "");
 
-    // Find the component data based on the target ID
     const componentTitle = targetId.replace(/-/g, " ");
     const component = allComponents.find(
       (comp) => comp.title.toLowerCase() === componentTitle
