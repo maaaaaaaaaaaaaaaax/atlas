@@ -8,13 +8,22 @@ export { ThreeColumnsRight } from "./components/layout/three-columns-right";
 export { TwoColumns } from "./components/layout/two-columns";
 
 // Typography components
+export { A } from "./components/typography/a";
+export { Backpage } from "./components/typography/backpage";
 export { Br } from "./components/typography/br";
+export { Citation } from "./components/typography/citation";
 export { Footnote } from "./components/typography/footnote";
+export { H1 } from "./components/typography/h1";
+export { H2 } from "./components/typography/h2";
+export { H3 } from "./components/typography/h3";
+export { H4 } from "./components/typography/h4";
+export { H5 } from "./components/typography/h5";
 export { HighlightedBlack } from "./components/typography/highlighted-black";
 export { HighlightedPink } from "./components/typography/highlighted-pink";
 export { Keyword } from "./components/typography/keyword";
 export { List } from "./components/typography/list";
 export { ListItem } from "./components/typography/list-item";
+export { P } from "./components/typography/p";
 export { Quote } from "./components/typography/quote";
 export { Repetition } from "./components/typography/repetition";
 export { VerticalText } from "./components/typography/vertical-text";
