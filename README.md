@@ -91,8 +91,8 @@ module.exports = {
 };
 ```
 
-- Position the index.css file inside your project's `src/`
-- Position the print.css file inside your project's `public/`
+- Position the [index.css](https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/src/index.css) file inside your project's `src/`
+- Position the [print.css](https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/public/print.css) file inside your project's `public/`
 
 ## Available Components
 
