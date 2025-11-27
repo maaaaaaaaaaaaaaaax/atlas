@@ -15,6 +15,8 @@ npm install atlas-paged
 
 ## Quick Start
 
+### Paged Layouter Integration
+
 ```tsx
 import { Layouter, TwoColumns, PageBreak } from "atlas-paged";
 import "atlas-paged/styles.css"; // Import fonts
@@ -38,6 +40,60 @@ function MyDocument() {
 }
 ```
 
+### Integrate Tailwind styles
+Modify your `tailwind.config.js` so that all tailwind classes are safelisted. 
+
+```JS
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  safelist: [
+    'text-white',
+    'text-black', 
+    'bg-black',
+    'bg-white',
+    'text-red-500',
+    'text-center',
+    'text-justify',
+    'text-[5px]',
+    'text-[7px]',
+    'text-[20px]',
+    'font-mono',
+    'font-bold',
+    'rounded-tr-xs',
+    'rounded-full',
+    'px-1',
+    'py-0.5',
+    'px-0.5',
+    'pl-2',
+    'my-40',
+    'w-fit',
+    'uppercase',
+    'break-inside-avoid',
+    '[text-indent:-0.5rem]',
+    // Custom theme colors that should work with bg- and text-
+    'bg-tpink',
+    'bg-tgreen', 
+    'bg-tblue',
+    'bg-tviolet',
+    'text-tpink',
+    'text-tgreen',
+    'text-tblue', 
+    'text-tviolet',
+    // Custom fonts
+    'font-uncut',
+    'font-ibm',
+    'font-kapakana',
+  ],
+};
+```
+
+- Position the index.css file inside your project's `src/`
+- Position the print.css file inside your project's `public/`
+
 ## Available Components
 
 ### Layout Components
@@ -51,6 +107,7 @@ function MyDocument() {
 
 - `H1`, `H2`, `H3`, `H4`, `H5`, `H6` - Styled headings
 - `P` - Paragraph component
+- `A` - Link component
 
 ### Visual Elements
 
