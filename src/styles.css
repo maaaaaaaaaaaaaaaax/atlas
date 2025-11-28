@@ -3,6 +3,5 @@
 @import "./index.css";
 
 /* 
-Note: print.css should be imported separately in the client's print stylesheet
-or added with media="print" attribute as it contains @page rules
+Note: print.css must be copy pasted manually into your project's /public folder
 */

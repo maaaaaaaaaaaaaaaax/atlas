@@ -59,12 +59,6 @@ Setup your project's `main/index.css` file like the following:
 
 As the `Layouter` component is referencing the `print.css` file under `/public`, it has to be copy pasted into your projects `/public` folder. Until now I have not found another way.
 
-### Integrate Tailwind styles
-
-- Position the [index.css](https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/src/index.css) file inside your project's `src/`
-- Uncomment the following inside your `index.css`: `/* @source "../node_modules/atlas-paged"; */` (Depending on your projects setup you might need to change the path)
-- Position the [print.css](https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/public/print.css) file inside your project's `public/`
-
 ## Available Components
 
 ### Layout Components
