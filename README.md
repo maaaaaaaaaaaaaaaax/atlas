@@ -90,22 +90,6 @@ As the `Layouter` component is referencing the [print.css](https://github.com/ma
 - `LoremIpsum` - Lorem ipsum generator
 - `ChapterName` - Chapter naming utility
 
-## Development Workflow
-
-For development with live preview:
-
-```tsx
-import { TwoColumnsPage } from "atlas-paged";
-
-function App() {
-  return (
-    <div>
-      <TwoColumnsPage /> {/* Your preview pages */}
-    </div>
-  );
-}
-```
-
 ## Technologies Used
 
 React, Vite, TypeScript, Paged.js, Tailwind CSS
