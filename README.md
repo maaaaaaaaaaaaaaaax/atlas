@@ -15,6 +15,8 @@ npm install atlas-paged
 
 ## Quick Start
 
+### Paged Layouter Integration
+
 ```tsx
 import { Layouter, TwoColumns, PageBreak } from "atlas-paged";
 import "atlas-paged/styles.css"; // Import fonts
@@ -38,6 +40,12 @@ function MyDocument() {
 }
 ```
 
+### Integrate Tailwind styles
+
+- Position the [index.css](https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/src/index.css) file inside your project's `src/`
+- Uncomment the following inside your `index.css`: `/* @source "../node_modules/atlas-paged"; */` (Depending on your projects setup you might need to change the path)
+- Position the [print.css](https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/public/print.css) file inside your project's `public/`
+
 ## Available Components
 
 ### Layout Components
@@ -51,6 +59,7 @@ function MyDocument() {
 
 - `H1`, `H2`, `H3`, `H4`, `H5`, `H6` - Styled headings
 - `P` - Paragraph component
+- `A` - Link component
 
 ### Visual Elements
 
