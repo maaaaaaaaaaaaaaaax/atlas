@@ -19,8 +19,6 @@ npm install atlas-paged
 
 ```tsx
 import { Layouter, TwoColumns, PageBreak } from "atlas-paged";
-import "atlas-paged/styles.css"; // Import fonts
-import "atlas-paged/print.css"; // Import print styles
 
 function MyDocument() {
   return (
