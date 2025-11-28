@@ -13,6 +13,11 @@ https://atlas-paged.vercel.app/
 npm install atlas-paged
 ```
 
+### Peer Dependencies
+```bash
+npm install pagedjs tailwindcss
+```
+
 ## Quick Start
 
 ### Paged Layouter Integration
