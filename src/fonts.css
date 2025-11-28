@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: 'IBM Plex Serif';
-  src: url('/fonts/IBMPlexSerif-Boldltalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexSerif-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: 'IBM Plex Serif';
-  src: url('/fonts/IBMPlexSerif-SemiBoldltalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexSerif-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: 'IBM Plex Serif';
-  src: url('/fonts/IBMPlexSerif-Mediumltalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexSerif-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -70,7 +70,7 @@
 
 @font-face {
   font-family: 'IBM Plex Serif';
-  src: url('/fonts/IBMPlexSerif-Lightltalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexSerif-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
@@ -84,7 +84,7 @@
 
 @font-face {
   font-family: 'IBM Plex Serif';
-  src: url('/fonts/IBMPlexSerif-ExtraLightltalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexSerif-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
@@ -98,7 +98,7 @@
 
 @font-face {
   font-family: 'IBM Plex Serif';
-  src: url('/fonts/IBMPlexSerif-Thinltalic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexSerif-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: 'Uncut Sans';
-  src: url('/fonts/UncutSans-Regularltalic.otf') format('opentype');
+  src: url('/fonts/UncutSans-RegularItalic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
@@ -126,7 +126,7 @@
 
 @font-face {
   font-family: 'Uncut Sans';
-  src: url('/fonts/UncutSans-Boldltalic.otf') format('opentype');
+  src: url('/fonts/UncutSans-BoldItalic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }
@@ -140,7 +140,7 @@
 
 @font-face {
   font-family: 'Uncut Sans';
-  src: url('/fonts/UncutSans-Semiboldltalic.otf') format('opentype');
+  src: url('/fonts/UncutSans-SemiboldItalic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
 }
@@ -154,7 +154,7 @@
 
 @font-face {
   font-family: 'Uncut Sans';
-  src: url('/fonts/UncutSans-Mediumltalic.otf') format('opentype');
+  src: url('/fonts/UncutSans-MediumItalic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
@@ -168,7 +168,7 @@
 
 @font-face {
   font-family: 'Uncut Sans';
-  src: url('/fonts/UncutSans-Bookltalic.otf') format('opentype');
+  src: url('/fonts/UncutSans-BookItalic.otf') format('opentype');
   font-weight: 450;
   font-style: italic;
 }
@@ -182,7 +182,7 @@
 
 @font-face {
   font-family: 'Uncut Sans';
-  src: url('/fonts/UncutSans-Lightltalic.otf') format('opentype');
+  src: url('/fonts/UncutSans-LightItalic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
