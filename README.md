@@ -57,7 +57,7 @@ Setup your project's `main/index.css` file like the following:
 
 #### Print Style imports
 
-As the `Layouter` component is referencing the `print.css` file under `/public`, it has to be copy pasted into your projects `/public` folder. Until now I have not found another way.
+As the `Layouter` component is referencing the [print.css](https://github.com/maaaaaaaaaaaaaaaax/atlas/blob/main/public/print.css) file under `/public`, it has to be copy pasted into your projects `/public` folder. Until now I have not found another way.
 
 ## Available Components
 
