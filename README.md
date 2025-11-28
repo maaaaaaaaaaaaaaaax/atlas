@@ -26,8 +26,6 @@ npm install pagedjs tailwindcss
 
 ```tsx
 import { Layouter, TwoColumns, PageBreak } from "atlas-paged";
-import "atlas-paged/styles"; // Import all styles (base + fonts)
-import "atlas-paged/styles/print"; // Import print styles
 
 function MyDocument() {
   return (
@@ -47,32 +45,19 @@ function MyDocument() {
 }
 ```
 
-### Individual Style Imports
+### Style imports
 
-For more granular control, you can import styles individually:
+Setup your project's `main/index.css` file like the following:
 
-```tsx
-// Option 1: Import all styles at once
-import "atlas-paged/styles";
-
-// Option 2: Import styles individually
-import "atlas-paged/styles/fonts"; // Font definitions
-import "atlas-paged/styles/base"; // Base styles and theme
-import "atlas-paged/styles/print"; // Print-specific styles (@page rules)
+```css
+@import "tailwindcss";
+@import "atlas-paged/styles";
+@source "../node_modules/atlas-paged";
 ```
 
-### HTML Link Tags
+#### Print Style imports
 
-Alternatively, you can include styles via HTML link tags:
-
-```html
-<link rel="stylesheet" href="node_modules/atlas-paged/src/styles.css" />
-<link
-  rel="stylesheet"
-  href="node_modules/atlas-paged/public/print.css"
-  media="print"
-/>
-```
+As the `Layouter` component is referencing the `print.css` file under `/public`, it has to be copy pasted into your projects `/public` folder. Until now I have not found another way.
 
 ### Integrate Tailwind styles
 
