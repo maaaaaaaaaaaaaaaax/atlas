@@ -1,0 +1,8 @@
+/* Atlas Paged - Main Styles Export */
+@import "./fonts.css";
+@import "./index.css";
+
+/* 
+Note: print.css should be imported separately in the client's print stylesheet
+or added with media="print" attribute as it contains @page rules
+*/

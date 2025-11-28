@@ -10,6 +10,8 @@
     "dist",
     "public/print.css",
     "src/fonts.css",
+    "src/index.css",
+    "src/styles.css",
     "README.md"
   ],
   "exports": {
@@ -17,8 +19,10 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./styles": "./src/fonts.css",
-    "./print.css": "./public/print.css"
+    "./styles": "./src/styles.css",
+    "./styles/fonts": "./src/fonts.css",
+    "./styles/base": "./src/index.css",
+    "./styles/print": "./public/print.css"
   },
   "scripts": {
     "dev": "vite",

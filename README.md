@@ -5,6 +5,7 @@
 A comprehensive React component library for creating print-ready documents with Paged.js, featuring a built-in development preview system.
 
 ## Preview Version
+
 https://atlas-paged.vercel.app/
 
 ## Installation
@@ -19,8 +20,8 @@ npm install atlas-paged
 
 ```tsx
 import { Layouter, TwoColumns, PageBreak } from "atlas-paged";
-import "atlas-paged/styles.css"; // Import fonts
-import "atlas-paged/print.css"; // Import print styles
+import "atlas-paged/styles"; // Import all styles (base + fonts)
+import "atlas-paged/styles/print"; // Import print styles
 
 function MyDocument() {
   return (
@@ -38,6 +39,33 @@ function MyDocument() {
     </div>
   );
 }
+```
+
+### Individual Style Imports
+
+For more granular control, you can import styles individually:
+
+```tsx
+// Option 1: Import all styles at once
+import "atlas-paged/styles";
+
+// Option 2: Import styles individually
+import "atlas-paged/styles/fonts"; // Font definitions
+import "atlas-paged/styles/base"; // Base styles and theme
+import "atlas-paged/styles/print"; // Print-specific styles (@page rules)
+```
+
+### HTML Link Tags
+
+Alternatively, you can include styles via HTML link tags:
+
+```html
+<link rel="stylesheet" href="node_modules/atlas-paged/src/styles.css" />
+<link
+  rel="stylesheet"
+  href="node_modules/atlas-paged/public/print.css"
+  media="print"
+/>
 ```
 
 ### Integrate Tailwind styles
