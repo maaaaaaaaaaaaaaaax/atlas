@@ -4,21 +4,19 @@ import { LoremIpsum } from "../../lorem-ipsum";
 export function QuoteStory() {
   return (
     <div>
-      <p>
-        <LoremIpsum content="normal" />
-      </p>
+      <LoremIpsum content="normal" />
+
       <Quote>
         <LoremIpsum content="normal" />
       </Quote>
-      <p>
-        <LoremIpsum content="long" />
-      </p>
+
+      <LoremIpsum content="long" />
+
       <Quote>
         <LoremIpsum content="long" />
       </Quote>
-      <p>
-        <LoremIpsum content="normal" />
-      </p>
+
+      <LoremIpsum content="normal" />
     </div>
   );
 }
