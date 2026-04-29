@@ -76,13 +76,17 @@ As the `Layouter` component is referencing the [print.css](https://github.com/ma
 
 ### Visual Elements
 
+- `Spacer` - Visual spacer
 - `PageBreak` - Force page breaks
-- `Divider` - Visual dividers
 
 ### Page Components
 
 - `PageNumeration` - Page numbering
 - `Layouter` - Main layout engine
+
+### Utility Components
+
+- `Signature` - Signature item, provide svg/ img path
 
 ### Development Tools
 

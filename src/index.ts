@@ -3,6 +3,7 @@ export { Layouter } from "./paged/layouter";
 
 // Layout components
 export { PageBreak } from "./components/layout/page-break";
+export { Spacer } from "./components/layout/spacer";
 export { ThreeColumnsLeft } from "./components/layout/three-columns-left";
 export { ThreeColumnsRight } from "./components/layout/three-columns-right";
 export { TwoColumns } from "./components/layout/two-columns";
@@ -51,6 +52,7 @@ export {
   DottedLineWhite,
 } from "./components/dotted-line";
 export { PageNumeration } from "./components/page-numeration";
+export { Signature } from "./components/signature";
 
 // Types
 export type { AtlasProps, Chapter } from "./components/pages/atlas";

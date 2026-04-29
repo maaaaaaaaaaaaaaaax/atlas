@@ -1,5 +1,6 @@
 import { PageBreak } from "./components/layout/page-break";
 import { ChapterName } from "./preview/chapter-name";
+import { SpacerStory } from "./preview/chapter/layout/spacer.story";
 import { ThreeColumnsLeftStory } from "./preview/chapter/layout/three-columns-left.story";
 import { ThreeColumnsRightStory } from "./preview/chapter/layout/three-columns-right.story";
 import { TwoColumnsStory } from "./preview/chapter/layout/two-columns-page.story";
@@ -27,9 +28,12 @@ import { FigureImageStory } from "./preview/chapter/visual/figure-image.story";
 import { FigureStory } from "./preview/chapter/visual/figure.story";
 
 // Other components
-import { DefinitionStory } from "./preview/chapter/other/definition.story";
-import { DottedLineStory } from "./preview/chapter/other/dotted-line.story";
-import { PageNumerationStory } from "./preview/chapter/other/page-numeration.story";
+import {
+  DefinitionStory,
+  DottedLineStory,
+  PageNumerationStory,
+  SignatureStory,
+} from "./preview/chapter/other";
 
 export function Book() {
   return (
@@ -48,6 +52,11 @@ export function Book() {
       <div>
         <ChapterName name="three columns right" id="three-columns-right" />
         <ThreeColumnsRightStory />
+      </div>
+      <PageBreak />
+      <div>
+        <ChapterName name="spacer" id="spacer" />
+        <SpacerStory />
       </div>
 
       <PageBreak />
@@ -156,6 +165,11 @@ export function Book() {
       <div>
         <ChapterName name="page numeration" id="page-numeration" />
         <PageNumerationStory />
+      </div>
+      <PageBreak />
+      <div>
+        <ChapterName name="signature" id="signature" />
+        <SignatureStory />
       </div>
     </>
   );

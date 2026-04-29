@@ -18,5 +18,10 @@ export const navigationLayout: NavigationElement = {
       componentUrl: "/layout/three-columns-right.tsx",
       implementationUrl: "/layout/three-columns-right.story.tsx",
     },
+    {
+      title: "spacer",
+      componentUrl: "/layout/spacer.tsx",
+      implementationUrl: "layout/spacer.story.tsx",
+    },
   ],
 };
