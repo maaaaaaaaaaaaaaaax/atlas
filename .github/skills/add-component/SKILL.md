@@ -103,6 +103,18 @@ In `src/book.tsx`:
    </div>
    ```
 
+### 5. Add to README.md
+
+Add an entry to the "Available Components" section in `README.md` under the matching category heading:
+
+- **Layout** → `### Layout Components`
+- **Typography** → `### Typography`
+- **Visual** → `### Visual Elements`
+- **Pages** → `### Page Components`
+- **Utility** → `### Utility Components`
+
+Format: `- \`ComponentName\` - Short description`
+
 ## Naming Conventions
 
 - Component file: `kebab-case.tsx`
@@ -119,3 +131,4 @@ In `src/book.tsx`:
 - [ ] Navigation entry added to category `index.ts` with correct `componentUrl` and `implementationUrl`
 - [ ] Story imported in `src/book.tsx`
 - [ ] Chapter entry added in `src/book.tsx` under the correct section comment
+- [ ] Entry added to `README.md` under the correct category in "Available Components"

@@ -37,13 +37,13 @@ import {
   FigureStory,
 } from "./preview/chapter/visual";
 
-// Other components
+// Utility components
 import {
   DefinitionStory,
   DottedLineStory,
   PageNumerationStory,
   SignatureStory,
-} from "./preview/chapter/other";
+} from "./preview/chapter/utility";
 
 export function Book() {
   return (
@@ -161,7 +161,7 @@ export function Book() {
 
       <PageBreak />
 
-      {/* COMPONENTS */}
+      {/* UTILITY */}
       <div>
         <ChapterName name="definition" id="definition" />
         <DefinitionStory />

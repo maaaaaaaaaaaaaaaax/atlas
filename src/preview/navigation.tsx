@@ -4,6 +4,7 @@ import { useActiveComponent } from "../contexts/ActiveComponentContext";
 import { navigationLayout } from "./chapter/layout";
 import { navigationPages } from "./chapter/pages";
 import { navigationTypography } from "./chapter/typography";
+import { navigationUtility } from "./chapter/utility";
 import { navigationVisual } from "./chapter/visual";
 
 export type NavigationComponent = {
@@ -22,6 +23,7 @@ export const navigationElements: NavigationElement[] = [
   navigationPages,
   navigationTypography,
   navigationVisual,
+  navigationUtility,
 ];
 
 export type NavigationProps = {
@@ -42,7 +44,7 @@ export function Navigation({
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    url: string
+    url: string,
   ) => {
     e.preventDefault();
     if (!isPreviewReady) {
@@ -53,7 +55,7 @@ export function Navigation({
 
     const componentTitle = targetId.replace(/-/g, " ");
     const component = allComponents.find(
-      (comp) => comp.title.toLowerCase() === componentTitle
+      (comp) => comp.title.toLowerCase() === componentTitle,
     );
 
     if (component) {

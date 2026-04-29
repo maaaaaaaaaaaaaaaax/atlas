@@ -5,8 +5,8 @@ export { DottedLineStory } from "./dotted-line.story";
 export { PageNumerationStory } from "./page-numeration.story";
 export { SignatureStory } from "./signature.story";
 
-export const navigationLayout: NavigationElement = {
-  title: "Utility",
+export const navigationUtility: NavigationElement = {
+  title: "utility",
   components: [
     {
       title: "definition",

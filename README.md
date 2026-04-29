@@ -65,28 +65,47 @@ As the `Layouter` component is referencing the [print.css](https://github.com/ma
 
 - `TwoColumns` - Two-column layout
 - `ThreeColumnsLeft` - Three-column layout with emphasis on left
-- `ThreeColumnsCenter` - Three-column layout with emphasis on center
 - `ThreeColumnsRight` - Three-column layout with emphasis on right
+- `Spacer` - Vertical spacer
+- `PageBreak` - Force page breaks
 
 ### Typography
 
-- `H1`, `H2`, `H3`, `H4`, `H5`, `H6` - Styled headings
+- `H1`, `H2`, `H3`, `H4`, `H5` - Styled headings
 - `P` - Paragraph component
 - `A` - Link component
+- `Br` - Line break
+- `HighlightedBlack` - Black highlighted text
+- `HighlightedPink` - Pink highlighted text
+- `Keyword` - Keyword styling
+- `Quote` - Block quote
+- `Footnote` - Footnote element
+- `Citation` - Citation element
+- `List` / `ListItem` - List components
+- `Repetition` - Repeated text styling
+- `VerticalText` - Vertically oriented text
+- `Backpage` - Backpage typography
 
 ### Visual Elements
 
-- `Spacer` - Visual spacer
-- `PageBreak` - Force page breaks
+- `Figure` - Figure with caption
+- `FigureImage` - Image within a figure
+- `Chart` - Chart component
 
 ### Page Components
 
+- `Atlas` - Atlas page layout
+- `Gallery` - Gallery page layout
+- `References` - References page
+- `ImageReferences` - Image references page
 - `PageNumeration` - Page numbering
 - `Layouter` - Main layout engine
 
 ### Utility Components
 
-- `Signature` - Signature item, provide svg/ img path
+- `Definition` - Definition item
+- `DottedLine` - Dotted line separator
+- `Signature` - Signature item, provide svg/img path
 
 ### Development Tools
 
