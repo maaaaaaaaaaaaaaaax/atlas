@@ -1,13 +1,21 @@
 import { PageBreak } from "./components/layout/page-break";
 import { ChapterName } from "./preview/chapter-name";
-import { SpacerStory } from "./preview/chapter/layout/spacer.story";
-import { ThreeColumnsLeftStory } from "./preview/chapter/layout/three-columns-left.story";
-import { ThreeColumnsRightStory } from "./preview/chapter/layout/three-columns-right.story";
-import { TwoColumnsStory } from "./preview/chapter/layout/two-columns-page.story";
-import { AtlasStory } from "./preview/chapter/pages/atlas.story";
-import { GalleryStory } from "./preview/chapter/pages/gallery.story";
-import { ImageReferencesStory } from "./preview/chapter/pages/image-references.story";
-import { ReferencesStory } from "./preview/chapter/pages/references.story";
+
+// Layout components
+import {
+  SpacerStory,
+  ThreeColumnsLeftStory,
+  ThreeColumnsRightStory,
+  TwoColumnsStory,
+} from "./preview/chapter/layout";
+
+// Pages components
+import {
+  AtlasStory,
+  GalleryStory,
+  ImageReferencesStory,
+  ReferencesStory,
+} from "./preview/chapter/pages";
 
 // Typography components
 import {
@@ -23,9 +31,11 @@ import {
 } from "./preview/chapter/typography";
 
 // Visual components
-import { ChartStory } from "./preview/chapter/visual/chart.story";
-import { FigureImageStory } from "./preview/chapter/visual/figure-image.story";
-import { FigureStory } from "./preview/chapter/visual/figure.story";
+import {
+  ChartStory,
+  FigureImageStory,
+  FigureStory,
+} from "./preview/chapter/visual";
 
 // Other components
 import {

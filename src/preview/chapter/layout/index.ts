@@ -1,5 +1,10 @@
 import { NavigationElement } from "../../navigation";
 
+export { SpacerStory } from "./spacer.story";
+export { ThreeColumnsLeftStory } from "./three-columns-left.story";
+export { ThreeColumnsRightStory } from "./three-columns-right.story";
+export { TwoColumnsStory } from "./two-columns-page.story";
+
 export const navigationLayout: NavigationElement = {
   title: "layout",
   components: [

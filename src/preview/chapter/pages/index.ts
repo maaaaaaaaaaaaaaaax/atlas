@@ -1,5 +1,10 @@
 import { NavigationElement } from "../../navigation";
 
+export { AtlasStory } from "./atlas.story";
+export { GalleryStory } from "./gallery.story";
+export { ImageReferencesStory } from "./image-references.story";
+export { ReferencesStory } from "./references.story";
+
 export const navigationPages: NavigationElement = {
   title: "pages",
   components: [
