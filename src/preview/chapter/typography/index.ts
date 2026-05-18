@@ -4,6 +4,7 @@ export { HighlightedBlackStory } from "./highlighted-black.story";
 export { HighlightedPinkStory } from "./highlighted-pink.story";
 export { KeywordStory } from "./keyword.story";
 export { ListStory } from "./list.story";
+export { ProposalStory } from "./proposal.story";
 export { QuoteStory } from "./quote.story";
 export { RepetitionStory } from "./repetition.story";
 export { VerticalTextStory } from "./vertical-text.story";
@@ -32,6 +33,11 @@ export const navigationTypography: NavigationElement = {
       title: "quote",
       componentUrl: "/typography/quote.tsx",
       implementationUrl: "typography/quote.story.tsx",
+    },
+    {
+      title: "proposal",
+      componentUrl: "/typography/proposal.tsx",
+      implementationUrl: "typography/proposal.story.tsx",
     },
     {
       title: "footnote",

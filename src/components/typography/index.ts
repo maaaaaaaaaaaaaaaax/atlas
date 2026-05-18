@@ -14,6 +14,7 @@ export { Keyword } from "./keyword";
 export { List } from "./list";
 export { ListItem } from "./list-item";
 export { P } from "./p";
+export { Proposal } from "./proposal";
 export { Quote } from "./quote";
 export { Repetition } from "./repetition";
 export { VerticalText } from "./vertical-text";

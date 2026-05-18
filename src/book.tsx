@@ -25,6 +25,7 @@ import {
   HighlightedPinkStory,
   KeywordStory,
   ListStory,
+  ProposalStory,
   QuoteStory,
   RepetitionStory,
   VerticalTextStory,
@@ -113,6 +114,11 @@ export function Book() {
       <div>
         <ChapterName name="quote" id="quote" />
         <QuoteStory />
+      </div>
+      <PageBreak />
+      <div>
+        <ChapterName name="proposal" id="proposal" />
+        <ProposalStory />
       </div>
       <PageBreak />
       <div>

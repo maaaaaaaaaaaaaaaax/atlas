@@ -12,6 +12,7 @@ lerna-debug.log*
 
 *.blend*
 signature.svg
+Publish.md
 .env
 dist
 dist-ssr
