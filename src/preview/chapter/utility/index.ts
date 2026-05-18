@@ -11,22 +11,22 @@ export const navigationUtility: NavigationElement = {
     {
       title: "definition",
       componentUrl: "/components/definition.tsx",
-      implementationUrl: "other/definition.story.tsx",
+      implementationUrl: "utility/definition.story.tsx",
     },
     {
       title: "dotted line",
       componentUrl: "/components/dotted-line.tsx",
-      implementationUrl: "other/dotted-line.story.tsx",
+      implementationUrl: "utility/dotted-line.story.tsx",
     },
     {
       title: "page numeration",
       componentUrl: "/components/page-numeration.tsx",
-      implementationUrl: "other/page-numeration.story.tsx",
+      implementationUrl: "utility/page-numeration.story.tsx",
     },
     {
       title: "signature",
       componentUrl: "/components/signature.tsx",
-      implementationUrl: "other/signature.story.tsx",
+      implementationUrl: "utility/signature.story.tsx",
     },
   ],
 };
