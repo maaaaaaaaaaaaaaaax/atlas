@@ -54,6 +54,7 @@ export {
 } from "./components/dotted-line";
 export { PageNumeration } from "./components/page-numeration";
 export { Signature } from "./components/signature";
+export { SpanAll } from "./components/span-all";
 
 // Types
 export type { AtlasProps, Chapter } from "./components/pages/atlas";
@@ -64,6 +65,7 @@ export type {
 export type { ChartItem, ChartProps } from "./components/visual/chart";
 export type { FigureProps } from "./components/visual/figure";
 export type { ImageReference } from "./components/visual/figure-image";
+export type { SpanAllProps } from "./components/span-all";
 export type { ChapterNameProps } from "./preview/chapter-name";
 export type {
   NavigationComponent,
