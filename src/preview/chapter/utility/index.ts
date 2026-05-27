@@ -4,6 +4,7 @@ export { DefinitionStory } from "./definition.story";
 export { DottedLineStory } from "./dotted-line.story";
 export { PageNumerationStory } from "./page-numeration.story";
 export { SignatureStory } from "./signature.story";
+export { SpanAllStory } from "./span-all.story";
 
 export const navigationUtility: NavigationElement = {
   title: "utility",
@@ -27,6 +28,11 @@ export const navigationUtility: NavigationElement = {
       title: "signature",
       componentUrl: "/components/signature.tsx",
       implementationUrl: "utility/signature.story.tsx",
+    },
+    {
+      title: "span all",
+      componentUrl: "/components/span-all.tsx",
+      implementationUrl: "utility/span-all.story.tsx",
     },
   ],
 };

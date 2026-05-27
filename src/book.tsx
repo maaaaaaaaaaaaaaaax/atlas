@@ -44,6 +44,7 @@ import {
   DottedLineStory,
   PageNumerationStory,
   SignatureStory,
+  SpanAllStory,
 } from "./preview/chapter/utility";
 
 export function Book() {
@@ -186,6 +187,11 @@ export function Book() {
       <div>
         <ChapterName name="signature" id="signature" />
         <SignatureStory />
+      </div>
+      <PageBreak />
+      <div>
+        <ChapterName name="span all" id="span-all" />
+        <SpanAllStory />
       </div>
     </>
   );

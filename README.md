@@ -107,6 +107,7 @@ As the `Layouter` component is referencing the [print.css](https://github.com/ma
 - `Definition` - Definition item
 - `DottedLine` - Dotted line separator
 - `Signature` - Signature item, provide svg/img path
+- `SpanAll` - Spans content across all columns
 
 ### Development Tools
 
