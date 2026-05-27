@@ -1,6 +1,6 @@
 {
   "name": "atlas-paged",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "description": "React components for creating print-ready documents with Paged.js, including development preview system",
   "main": "dist/index.js",
