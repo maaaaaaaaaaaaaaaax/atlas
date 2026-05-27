@@ -65,7 +65,6 @@ export type {
 export type { ChartItem, ChartProps } from "./components/visual/chart";
 export type { FigureProps } from "./components/visual/figure";
 export type { ImageReference } from "./components/visual/figure-image";
-export type { SpanAllProps } from "./components/span-all";
 export type { ChapterNameProps } from "./preview/chapter-name";
 export type {
   NavigationComponent,
