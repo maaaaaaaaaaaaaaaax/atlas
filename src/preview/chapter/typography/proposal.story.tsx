@@ -1,13 +1,15 @@
-import { Br } from "../../../components/typography";
-import { Proposal } from "../../../components/typography/proposal";
+import { Br, ProposalEnd, ProposalStart } from "../../../components/typography";
+
 import { getLoremIpsum } from "../../lorem-ipsum";
 
 export function ProposalStory() {
   return (
-    <Proposal>
+    <p>
+      <ProposalStart>start</ProposalStart>
       {getLoremIpsum("extraLong")}
       <Br />
       {getLoremIpsum("extraLong")}
-    </Proposal>
+      <ProposalEnd>end</ProposalEnd>
+    </p>
   );
 }

@@ -25,7 +25,7 @@ export { Keyword } from "./components/typography/keyword";
 export { List } from "./components/typography/list";
 export { ListItem } from "./components/typography/list-item";
 export { P } from "./components/typography/p";
-export { Proposal } from "./components/typography/proposal";
+export { ProposalEnd, ProposalStart } from "./components/typography/proposal";
 export { Quote } from "./components/typography/quote";
 export { Repetition } from "./components/typography/repetition";
 export { VerticalText } from "./components/typography/vertical-text";

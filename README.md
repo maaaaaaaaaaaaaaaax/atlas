@@ -82,7 +82,8 @@ As the `Layouter` component is referencing the [print.css](https://github.com/ma
 - `Footnote` - Footnote element
 - `Citation` - Citation element
 - `List` / `ListItem` - List components
-- `Proposal` - Proposal text styling
+- `ProposalStart` - Start a proposal paragraph, ideally first word
+- `ProposalEnd` - End a proposal paragraph, ideally first word
 - `Repetition` - Repeated text styling
 - `VerticalText` - Vertically oriented text
 - `Backpage` - Backpage typography
