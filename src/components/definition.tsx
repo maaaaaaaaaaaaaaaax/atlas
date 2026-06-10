@@ -1,28 +1,19 @@
-import { HighlightedPink } from "./typography";
 import { VerticalText } from "./typography/vertical-text";
 
 export type DefinitionProps = {
   toBeDefined: string;
   apaReference?: string;
   children: React.ReactNode;
-  isVertical?: boolean;
 };
 
 export function Definition({
   toBeDefined,
   apaReference,
   children,
-  isVertical = true,
 }: DefinitionProps) {
   return (
     <div className="flex flex-row gap-x-2">
-      {isVertical ? (
-        <VerticalText text={toBeDefined} />
-      ) : (
-        <HighlightedPink>
-          <p>{toBeDefined}</p>
-        </HighlightedPink>
-      )}
+      <VerticalText text={toBeDefined} />
       <div>
         <p>
           {children}

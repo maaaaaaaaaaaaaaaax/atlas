@@ -10,13 +10,6 @@ export function DefinitionStory() {
       <Definition toBeDefined={toBeDefined} apaReference="(Smith, 2023)">
         {description}
       </Definition>
-      <Definition
-        toBeDefined={toBeDefined}
-        apaReference="(Smith, 2023)"
-        isVertical={false}
-      >
-        {description}
-      </Definition>
     </div>
   );
 }
