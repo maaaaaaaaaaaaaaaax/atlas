@@ -46,6 +46,7 @@ export { ImageReferences } from "./components/pages/image-references";
 export { References } from "./components/pages/references";
 
 // Utility components
+export { CodeBlock } from "./components/code-block";
 export { Definition } from "./components/definition";
 export {
   DottedLine,
@@ -57,6 +58,7 @@ export { Signature } from "./components/signature";
 export { SpanAll } from "./components/span-all";
 
 // Types
+export type { CodeBlockProps } from "./components/code-block";
 export type { AtlasProps, Chapter } from "./components/pages/atlas";
 export type {
   APAReference,

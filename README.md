@@ -105,6 +105,7 @@ As the `Layouter` component is referencing the [print.css](https://github.com/ma
 
 ### Utility Components
 
+- `CodeBlock` - Syntax-highlighted code block renderer
 - `Definition` - Definition item
 - `DottedLine` - Dotted line separator
 - `Signature` - Signature item, provide svg/img path

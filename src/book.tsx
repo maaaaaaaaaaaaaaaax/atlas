@@ -40,6 +40,7 @@ import {
 
 // Utility components
 import {
+  CodeBlockStory,
   DefinitionStory,
   DottedLineStory,
   PageNumerationStory,
@@ -169,6 +170,11 @@ export function Book() {
       <PageBreak />
 
       {/* UTILITY */}
+      <div>
+        <ChapterName name="code block" id="code-block" />
+        <CodeBlockStory />
+      </div>
+      <PageBreak />
       <div>
         <ChapterName name="definition" id="definition" />
         <DefinitionStory />

@@ -1,5 +1,6 @@
 import { NavigationElement } from "../../navigation";
 
+export { CodeBlockStory } from "./code-block.story";
 export { DefinitionStory } from "./definition.story";
 export { DottedLineStory } from "./dotted-line.story";
 export { PageNumerationStory } from "./page-numeration.story";
@@ -9,6 +10,11 @@ export { SpanAllStory } from "./span-all.story";
 export const navigationUtility: NavigationElement = {
   title: "utility",
   components: [
+    {
+      title: "code block",
+      componentUrl: "/components/code-block.tsx",
+      implementationUrl: "utility/code-block.story.tsx",
+    },
     {
       title: "definition",
       componentUrl: "/components/definition.tsx",
