@@ -2,9 +2,9 @@ import { Chapter } from "../../../components/pages/atlas";
 
 export const atlas: Chapter[] = [
   {
-    title: "Abstract",
+    title: "Proposal",
     page: 6,
-    link: "#abstract",
+    link: "#proposal",
   },
   {
     title: "Timeline",

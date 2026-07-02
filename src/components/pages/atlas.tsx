@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { VerticalText } from "../typography/vertical-text";
 
 export type Chapter = {
@@ -25,8 +27,7 @@ function getTargetId(chapter: Chapter): string {
 }
 
 export function Atlas({ atlas }: AtlasProps) {
-  const scrollToChapter = (chapter: Chapter) => {
-    const targetId = getTargetId(chapter);
+  const scrollToTargetId = (targetId: string) => {
     if (!targetId) {
       return;
     }
@@ -58,12 +59,48 @@ export function Atlas({ atlas }: AtlasProps) {
     });
   };
 
+  const scrollToChapter = (chapter: Chapter) => {
+    scrollToTargetId(getTargetId(chapter));
+  };
+
+  useEffect(() => {
+    const handlePreviewAtlasClick = (event: MouseEvent) => {
+      const eventTarget = event.target;
+      if (!(eventTarget instanceof HTMLElement)) {
+        return;
+      }
+
+      const clickable = eventTarget.closest<HTMLElement>(
+        "#preview [data-atlas-target-id]",
+      );
+      if (!clickable) {
+        return;
+      }
+
+      const targetId = clickable.dataset.atlasTargetId;
+      if (!targetId) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+      scrollToTargetId(targetId);
+    };
+
+    document.addEventListener("click", handlePreviewAtlasClick);
+
+    return () => {
+      document.removeEventListener("click", handlePreviewAtlasClick);
+    };
+  }, []);
+
   return (
     <div className="flex gap-5">
       {atlas.map((chapter, index) => (
         <div
           key={chapter.title + index}
           className="flex flex-row gap-2 cursor-pointer"
+          data-atlas-target-id={getTargetId(chapter)}
           onClick={() => scrollToChapter(chapter)}
         >
           <VerticalText
@@ -77,6 +114,7 @@ export function Atlas({ atlas }: AtlasProps) {
                 key={`${chapter.title}-${subChapter.title}-${index}`}
                 className="cursor-pointer"
                 style={{ marginTop: `${(index + 1) * 10}px` }}
+                data-atlas-target-id={getTargetId(subChapter)}
                 onClick={(e) => {
                   e.stopPropagation();
                   scrollToChapter(subChapter);
