@@ -3,9 +3,13 @@ export type ProposalProps = {
 };
 
 export function ProposalStart({ children }: ProposalProps) {
-  return <span className="bg-gradient-to-r from-tviolet">{children}</span>;
+  return (
+    <span className="bg-gradient-to-r from-tviolet to-white">{children}</span>
+  );
 }
 
 export function ProposalEnd({ children }: ProposalProps) {
-  return <span className="bg-gradient-to-l from-tviolet">{children}</span>;
+  return (
+    <span className="bg-gradient-to-l from-tviolet to-white">{children}</span>
+  );
 }
