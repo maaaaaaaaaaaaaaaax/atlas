@@ -73,3 +73,6 @@ export type {
   NavigationElement,
   NavigationProps,
 } from "./preview/navigation";
+
+// Hooks
+export { usePrintImageOptimization } from "./hooks/use-print-image-optimisation";
